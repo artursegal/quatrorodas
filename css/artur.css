@@ -201,3 +201,23 @@ img {
     padding: 0px 0px 0px 0px; 
     margin: 0px 0px 0px 0px;
 }
+
+
+
+.col-md-menu {
+    position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px;
+}
+
+@media (min-width: 992px) {
+  .col-md-menu {
+    float: left;
+  }
+    .col-md-menu {
+    width: 14%;
+  }
+}
