@@ -1,0 +1,380 @@
+<html>
+
+<head>
+	<title>Quatro Rodas - Artur Segal Kaim</title>
+	<meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/artur.css" rel="stylesheet" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+        
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+       {
+          e.style.display = 'none';
+       }
+       else
+       {
+            fechaTudo();
+          e.style.display = 'block';      
+       }
+    }
+
+    function fechaTudo() {
+        var x = document.getElementsByClassName("menuItem");
+        var i;
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+
+   
+//-->
+</script>
+</head>
+
+<body>
+
+    <header>    
+    <div>
+        <center><img class="img-responsive" src="images/banner.png"></center>
+    </div>        
+    <br />
+    <div class="container visible-xs visible-sm" style="background-color: red; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+        <div class="pull-left" style="background-color: red; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; ">
+            <span class="helper"></span>
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div class="pull-right" style="background-color: red; margin: 5px 0px 0px 0px; padding: 0px 0px 0px 0px; ">
+            <div id="botaoFechar" style="display: block;">
+                <span class="helper"></span>
+                <a href="#" onclick="toggle_visibility('mainMenu');toggle_visibility('botaoAbrir');toggle_visibility('botaoFechar');">
+                    <img src="images/x.png">
+                </a>
+            </div>
+            <div id="botaoAbrir" style="display: none;">
+                <span class="helper"></span>
+                <a href="#" onclick="toggle_visibility('mainMenu');toggle_visibility('botaoAbrir');toggle_visibility('botaoFechar');">
+                    <img src="images/abrir.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <div id="mainMenu" class="navbar navbar-inverse navbar-fixed-top col-xs-12" style="display: block;position: relative; background-color: red; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; text-align: center; z-index: 1;" >
+        <a name="topo"></a>
+        <div class="container col-md-12 col-xs-12" style=" ">
+            <div class="navbar-header col-xs-12 col-md-2 visible-md visible-lg" style="margin-top: 0px">
+            <span class="helper"></span>
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+
+            <div class="col-md-8 col-xs-12 arturlink">
+                <ul class="nav navbar-nav arturlilink ">
+                    <li>
+                    <a href="#carrosPos" onclick="toggle_visibility('carrosMenu');">CARROS <img src="images/arrow.png"></a>
+                    </li>
+                    <li>
+                    <a href="#testesPos" onclick="toggle_visibility('testeMenu');">TESTES <img src="images/arrow.png"></a>
+                    </li>
+                    <li><a href="">NOTÍCIAS <img src="images/arrow.png"></a></li>
+                    <li><a href="">AUTO-SERVIÇO <img src="images/arrow.png"></a></li>
+                    <li><a href="">GUIA DE COMPRAS <img src="images/arrow.png"></a></li>
+                    <li><a href="">TABELA FIPE <img src="images/arrow.png"></a></li>
+                    <li><a href="">ASSINE <img src="images/arrow.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-xs-12" >
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+
+    
+    <div class="col-md-12 col-xs-12" style="display: inline-block;position: relative; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; background-color: #242424; font-size: 1.25em;">      
+
+        <div id="carrosMenu" class="menuItem col-md-12 col-xs-12" style="position: absolute; z-index: 1000; background-color: #242424; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; display: none" >
+            <a name="carrosPos"></a>
+
+            <!-- <div class="table col-md-12 col-xs-12" style="background-color: #242424; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> -->
+                <!-- <div style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">  -->
+                <div class="td col-md-2 col-xs-12"  style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+
+                        <!-- <div class="container" style="width: 160px; height: 30px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 30px;"> -->
+
+                            <ul id="nav" class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker arturlinkgray arturimghidden" style="margin-top: 15px; margin-left: 10px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; text-align: center;">
+
+                                <li><a href="#">Ver todos os carros</a></li>
+                            </ul>
+                        <!-- </div> -->
+                </div>
+                <!-- <div class="td col-md-1" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div> -->
+                <div class="td col-md-10 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                    <div class="td col-md-12 col-xs-12 arturlinkgrayhover" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                        <!-- <div class="td col-md-1 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; "></div> -->
+
+
+                        <div class="td col-md-2 col-xs-12 " style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                            <ul id="nav" class="nav  navMenu nav-pills nav-stacked arturlilink arturlilinkticker" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; font-family: 'AsapRegular', sans-serif;">
+
+                                <li><a href="#">Audi</a></li>
+                                <li><a href="#">Bentley</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">Chevrolet</a></li>
+                            </ul>
+                        </div>
+                        <div class="td col-md-2 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                            <ul id="nav" class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; font-family: 'AsapRegular', sans-serif;">
+
+                                <li><a href="#">Crysler</a></li>
+                                <li><a href="#">Chevrolet</a></li>
+                                <li><a href="#">Dodge</a></li>
+                                <li><a href="#">Ferrari</a></li>
+                            </ul>
+                        </div>
+                        <div class="td col-md-2 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                            <ul id="nav" class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; font-family: 'AsapRegular', sans-serif;">
+
+                                <li><a href="#">Fiat</a></li>
+                                <li><a href="#">Ford</a></li>
+                                <li><a href="#">Honda</a></li>
+                                <li><a href="#">Hyundai</a></li>
+                            </ul>
+                        </div>
+                        <div class="td col-md-2 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                            <ul id="nav" class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; font-family: 'AsapRegular', sans-serif;">
+
+                                <li><a href="#">JAC Motors</a></li>
+                                <li><a href="#">Jaguar</a></li>
+                                <li><a href="#">Jeep</a></li>
+                                <li><a href="#">Kia</a></li>
+                            </ul>
+                        </div>
+                        <div class="td col-md-2 col-xs-12" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                            <ul id="nav" class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker" style="margin-top: 0px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; font-family: 'AsapRegular', sans-serif;">
+
+                                <li><a href="#">Lamborghini</a></li>
+                                <li><a href="#">Mercedes-Benz</a></li>
+                                <li><a href="#">Mitsubishi</a></li>
+                                <li><a href="#">Volkswagen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visible-xs  visible-sm" style="color: white; text-align: center;">
+                    <ul class="navMenu arturlilink arturlilinkticker arturimghidden" style="margin-top: 15px; margin-left: 0px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                        <li>
+                            <a href="#topo" onclick="toggle_visibility('carrosMenu');">Fechar menu</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="table col-md-12 col-xs-12" style="background-color: red; height: 3px;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div>
+            </div>
+        <!-- </div>          -->
+    </div>
+
+ <div class="col-md-12 col-xs-12" style="display: inline-block;position: relative; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; background-color: #242424; font-size: 1.25em;">      
+
+        <div id="testeMenu" class="menuItem col-md-12 col-xs-12" style="position: absolute; z-index: 1000; background-color: #242424; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; display: none" >
+            <a name="testesPos"></a>
+
+            <!-- <div class="table col-md-12 col-xs-12" style="background-color: #242424; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> -->
+                <!-- <div style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">  -->
+                <div class="td col-md-2 col-xs-12" style="background-color: #474747;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+
+                    <!-- <div style="height: 15px; background-color: #474747;"></div> -->
+                    <!-- <div style=""> -->
+                    <!-- <nav > -->
+                        <ul class="nav navMenu nav-pills nav-stacked arturlilink arturlilinkticker arturimghidden" style="margin-top: 15px; margin-left: 0px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+
+                            <li><a class="active" href="#">Ver tudo de testes <img src="images/arrow-right.png"></a></li>
+                            <li><a href="#">Comparativos  <img src="images/arrow-right.png"></a></li>
+                            <li><a href="#">Impressões  <img src="images/arrow-right.png"></a></li>
+                            <li><a href="#">Longa duração  <img src="images/arrow-right.png"></a></li>
+                            <li><a href="#">Teste de pista  <img src="images/arrow-right.png"></a></li>
+                        </ul>
+                    <!-- </nav> -->
+                    <!-- </div> -->
+                </div>
+                <!-- <div class="td col-md-1" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div> -->
+                <div class="td col-md-10 col-xs-12" style="margin-top: 40px; margin-left: 0px;margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px;white-space: nowrap; text-align: center; ">
+                <!-- margin: 1em 0; -->
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+
+                    <div class="td col-carrosTeste col-xs-12">                        
+                        <img class="img-responsive" style="width: 100%; height: auto; max-width: 250px; vertical-align: top; display: inline-block;" src="images/menu1.png">
+                    </div>
+
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+                   
+                    <div class="td col-carrosTeste col-xs-12" >
+                        <img class="img-responsive" style="width: 100%; height: auto; max-width: 250px; vertical-align: top; display: inline-block;" src="images/menu2.png">
+                    </div>                 
+
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+                   
+                    <div class="td col-carrosTeste col-xs-12" >
+                        <img class="img-responsive" style="width: 100%; height: auto; max-width: 250px; vertical-align: top; display: inline-block;" src="images/menu3.png">
+                    </div>                 
+
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+                   
+                    <div class="td col-carrosTeste col-xs-12" >
+                        <img class="img-responsive" style="width: 100%; height: auto; max-width: 250px; vertical-align: top; display: inline-block;" src="images/menu4.png">
+                    </div>                 
+
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+                   
+                    <div class="td col-carrosTeste col-xs-12" >
+                        <img class="img-responsive" style="width: 100%; height: auto; max-width: 250px; vertical-align: top; display: inline-block;" src="images/menu5.png">
+                    </div>
+
+                    <div style="width: 1.25%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>       
+                    <!-- </div> -->
+                </div>
+
+
+
+                <div class="visible-xs  visible-sm" style="color: white; text-align: center;">
+                <ul class="navMenu arturlilink arturlilinkticker arturimghidden" style="margin-top: 15px; margin-left: 0px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                <li><a href="#topo" onclick="toggle_visibility('testeMenu');">Fechar menu</a></li></ul></div>
+                <!-- <div class="col-md-12 col-xs-12" style="margin-left: 0px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; "> -->
+                    <!-- <div class="content" style="margin-left: 0px;margin-right: 0px; margin-bottom: 15px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; "> -->
+                        
+                        <!-- <div class="x490">this is the content </div>
+                        <div class="x290">this is the content for desktop</div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <div class="table col-md-12 col-xs-12" style="background-color: red; height: 3px;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div>
+            </div>
+        <!-- </div>          -->
+    </div>
+
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top col-xs-12 navbar-red" style="display: inline-block;position: relative; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; text-align: center;" > -->
+    <div class="navbar-fixed-top navbar-red col-md-12 col-xs-12 " style="display: inline-block;position: relative; padding: 0px 0px 0px 0px; margin: 0 0 0 0; background-color: #242424;text-align: center; z-index: 2;"> 
+        <div class="container visible-xs visible-sm" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+        <div class="pull-left" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; ">
+            <span class="helper"></span>
+            <a href="index.html">
+                <img src="images/acessados.png">
+            </a>
+        </div>
+        <div class="pull-right" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; ">
+            <div id="botaoFechar2" style="display: block;">
+                <span class="helper"></span>
+                <a href="#" onclick="toggle_visibility('secondMenu');toggle_visibility('botaoAbrir2');toggle_visibility('botaoFechar2');">
+                    <img src="images/x.png">
+                </a>
+            </div>
+            <div id="botaoAbrir2" style="display: none;">
+                <span class="helper"></span>
+                <a href="#" onclick="toggle_visibility('secondMenu');toggle_visibility('botaoAbrir2');toggle_visibility('botaoFechar2');">
+                    <img src="images/abrir.png">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div id="secondMenu" class="container col-md-12 col-xs-12" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: block;">
+            <div class="navbar-header col-xs-12 col-md-2 visible-md visible-lg" style="margin-top: 0px">
+                <a href="index.html">
+                    <img src="images/acessados.png">
+                </a>
+            </div>  
+
+            <div class="col-md-10 col-xs-12 arturlilink" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+                
+                    
+                <ul class="nav navbar-nav arturlilink " style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-left: 0px ; padding-right: 0px; padding-bottom: 0px; ">
+                    <li><a class="arturli" href="">SALÃO DO AUTOMÓVEL</a></li>
+                    <li><a class="arturli" href="">RENEGADE</a></li>
+                    <li><a class="arturli" href="">NOVO SANDERO</a></li>
+                    <li><a class="arturli" href="">NOVO FOX</a></li>
+                    <li><a class="arturli" href="">NOVO KA</a></li>
+                    <li><a class="arturli" href="">HB 20</a></li>
+                    <li><a class="arturli" href="">DUSTER</a></li>
+                    <li><a class="arturli" href="">GOLF</a></li>
+                    <li><a class="arturli" href="">COROLLA</a></li>
+                    <li><a class="arturli" href="">CIVIC</a></li>
+                    <li><a class="arturli" href="">IA-ZI</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="table col-md-12 col-xs-12" style="height: 5px;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div>
+
+<!-- <div class="table col-md-12 col-xs-12" style="display: inline-block;position: relative; padding: 5px 0px 0px 0px; margin: 0px 0px 0px 0px;"> -->
+    <div class="table col-md-12 col-xs-12" style="display: inline-block;position: relative;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+        <!-- <div class="table col-md-12 col-xs-12" style="display: inline-block;position: relative;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">  -->
+        <div class="td col-fotosA col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><img class="img-responsive" style="width: 100%; height: auto" src="images/1.jpg"></div>
+
+        <div class="td col-fotosB col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+             <div class="table col-md-12 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+                <div class="td col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><img class="img-responsive" style="width: 100%; height: auto" src="images/2.jpg"></div>
+                <div class="td col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><img class="img-responsive"  style="width: 100%; height: auto" src="images/3.jpg"></div>
+            </div>
+            <div class="table col-md-12 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+                <div class="td col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><img class="img-responsive"  style="width: 100%; height: auto" src="images/4.jpg"></div>
+                <div class="td col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><img class="img-responsive" style="width: 100%; height: auto"  src="images/5.jpg"></div>
+            </div>
+        </div>
+        <!-- </div> -->
+    
+<!-- <div>  -->
+     <div class="table col-md-12 col-xs-12" style="height: 5px;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"></div>
+
+        <div class="table col-md-12 col-xs-12" style="display: inline-block;position: relative;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+           
+
+            <div class="col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+                <div class="td col-carros col-xs-12">
+                    <img class="img-responsive" style="width: 100%; height: auto" src="images/baixo1.png">
+                </div>
+
+                <div style="width: 0.5%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+               
+                <div class="td col-carros col-xs-12" >
+                    <img class="img-responsive" style="width: 100%; height: auto" src="images/baixo2.png">
+                </div>
+            </div>
+
+             <div class="col-md-6 col-xs-12" style="padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"> 
+                <div class="td col-carros col-xs-12">
+                    <img class="img-responsive" style="width: 100%; height: auto" src="images/baixo3.png">
+                </div>
+
+                <div style="width: 0.5%;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; position: relative;float: left;min-height: 1px;"></div>
+               
+                <div class="td col-carros col-xs-12" >
+                    <img class="img-responsive" style="width: 100%; height: auto" src="images/baixo4.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
