@@ -196,3 +196,8 @@ img {
         width: 18.5%;
     }
 }
+
+.tudoZero {
+    padding: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px;
+}
