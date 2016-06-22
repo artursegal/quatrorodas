@@ -7,32 +7,8 @@
     <link href="css/artur.css" rel="stylesheet" />
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script type="text/javascript">
-
-    function toggle_visibility(id) {
-        
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-       {
-          e.style.display = 'none';
-       }
-       else
-       {
-            fechaTudo();
-          e.style.display = 'block';      
-       }
-    }
-
-    function fechaTudo() {
-        var x = document.getElementsByClassName("menuItem");
-        var i;
-
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-    }
-
-</script>
+    <script type="text/javascript" src="scripts.js"></script>
+    
 </head>
 
 <body>
@@ -43,7 +19,7 @@
         <center><img class="img-responsive" src="images/banner.png"></center>
     </div>        
     <br />
-    <div class="col-md-12 col-xs-12 visible-xs visible-sm tudoZero" style="background-color: red;">
+    <div class="col-xs-12 visible-xs visible-sm tudoZero" style="background-color: red;">
         <div class="pull-left tudoZero" style="background-color: red;">
             <span class="helper"></span>            
             <a href="index.html">
@@ -71,38 +47,39 @@
         
         <div class="container col-md-12 col-xs-12" style=" ">
             <div class="navbar-header col-xs-12 col-md-2 visible-md visible-lg" style="margin-top: 0px">
-            <span class="helper"></span>
+                <span class="helper"></span>
                 <a href="index.html">
                     <img src="images/logo.png">
                 </a>
             </div>
 
-            <div class="col-md-8 col-xs-12 arturlink">
-                <div class="visible-xs tudoZero">
-                    <div class="col-md-menu tudoZero ">
-                        <div class="col-xs-10 tudoZero hov" >
-                            <ul class="nav navbar-nav arturlilink tudoZero">
+            <div class="col-lg-8 col-sm-12 arturlink" >
+                <div class="visible-xs visible-sm tudoZero">
+                    <div class="col-md-menu  tudoZero ">
+                        <div class="col-xs-10 tudoZero " >            
+                            <ul class="nav arturlilink tudoZero" style="margin: 0 auto;" >
                                 <li>
-                                    <a href="#carrosPos" onclick="toggle_visibility('carrosMenu');">
-                                        CARROS
+                                    <a href="#carrosPos" class="carrosBotao" onmouseover="addClassFuncaoJunto($(this), 'carrosBotao');" onmouseout="removeClassFuncaoJunto($(this), 'carrosBotao');" onclick="toggle_visibility('carrosMenu');">
+                                        CARROS 
                                     </a>
                                 </li>                                 
-                            </ul>
+                            </ul>                            
                         </div>
-                        <div class="col-xs-2 visible-xs tudoZero hov">
+                        <div class="col-xs-2 tudoZero">
                             <ul class="nav navbar-nav arturlilink" >
                                 <li>
-                                    <a href="#carrosPos" onclick="toggle_visibility('carrosMenu');">
-                                    <img src="images/arrow.png"></a>
+                                    <a class="carrosBotao" href="#carrosPos" onclick="toggle_visibility('carrosMenu');" onmouseover="addClassFuncaoJunto($(this), 'carrosBotao');" onmouseout="removeClassFuncaoJunto($(this), 'carrosBotao');">
+                                        <img src="images/arrow.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-menu tudoZero">
                         <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
+                            <ul class="nav arturlilink ">
                                 <li>
-                                    <a href="#testesPos" onclick="toggle_visibility('testesMenu');">
+                                    <a class="testesBotao" onmouseover="addClassFuncaoJunto($(this), 'testesBotao');" onmouseout="removeClassFuncaoJunto($(this), 'testesBotao');" onclick="toggle_visibility('testesMenu');" href="#testesPos">
                                         TESTES
                                     </a>
                                 </li>
@@ -111,7 +88,7 @@
                         <div class="col-xs-2 tudoZero">
                         <ul class="nav navbar-nav arturlilink ">
                             <li>
-                                <a href="#testesPos" onclick="toggle_visibility('testesMenu');">
+                                <a class="testesBotao" onmouseover="addClassFuncaoJunto($(this), 'testesBotao');" onmouseout="removeClassFuncaoJunto($(this), 'testesBotao');" href="#testesPos" onclick="toggle_visibility('testesMenu');">
                                     <img src="images/arrow.png">
                                 </a>
                             </li>
@@ -120,89 +97,89 @@
                     </div>
                     <div class="col-md-menu tudoZero">
                         <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
+                            <ul class="nav arturlilink ">
                                 <li>
-                                    <a href="">NOTÍCIAS</a>
+                                    <a class="noticiasBotao" onmouseover="addClassFuncaoJunto($(this), 'noticiasBotao');" onmouseout="removeClassFuncaoJunto($(this), 'noticiasBotao');">
+                                        NOTÍCIAS
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-2 tudoZero">
                             <ul class="nav navbar-nav arturlilink ">
                                 <li>
-                                    <a href=""><img src="images/arrow.png"></a>
+                                    <a onmouseover="addClassFuncaoJunto($(this), 'noticiasBotao');" onmouseout="removeClassFuncaoJunto($(this), 'noticiasBotao');" class="noticiasBotao">
+                                        <img src="images/arrow.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>                
                     <div class="col-md-menu tudoZero">
                         <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
+                            <ul class="nav arturlilink ">
                                 <li>
-                                    <a href="">AUTO-SERVIÇO</a>
+                                    <a class="autoservBotao" onmouseover="addClassFuncaoJunto($(this), 'autoservBotao');" onmouseout="removeClassFuncaoJunto($(this), 'autoservBotao');">
+                                        AUTO-SERVIÇO
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-2 tudoZero">
                             <ul class="nav navbar-nav arturlilink ">
                                 <li>
-                                    <a href=""><img src="images/arrow.png"></a>
+                                    <a onmouseover="addClassFuncaoJunto($(this), 'autoservBotao');" onmouseout="removeClassFuncaoJunto($(this), 'autoservBotao');" class="autoservBotao">
+                                        <img src="images/arrow.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-menu tudoZero">
                         <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
+                            <ul class="nav arturlilink ">
                                 <li>
-                                    <a href="">GUIA DE COMPRAS</a>
+                                    <a class="guiaBotao" onmouseover="addClassFuncaoJunto($(this), 'guiaBotao');" onmouseout="removeClassFuncaoJunto($(this), 'guiaBotao');">
+                                        GUIA DE COMPRAS
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-2 tudoZero">
                             <ul class="nav navbar-nav arturlilink ">
                                 <li>
-                                    <a href=""><img src="images/arrow.png"></a>
+                                    <a onmouseover="addClassFuncaoJunto($(this), 'guiaBotao');" onmouseout="removeClassFuncaoJunto($(this), 'guiaBotao');" class="guiaBotao">
+                                        <img src="images/arrow.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-menu tudoZero">
                         <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
+                            <ul class="nav arturlilink ">
                                 <li>
-                                    <a href="">TABELA FIPE</a>
+                                    <a class="tabelaBotao" onmouseover="addClassFuncaoJunto($(this), 'tabelaBotao');" onmouseout="removeClassFuncaoJunto($(this), 'tabelaBotao');">
+                                        TABELA FIPE
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-2 tudoZero">
                             <ul class="nav navbar-nav arturlilink ">
                                 <li>
-                                    <a href=""><img src="images/arrow.png"></a>
+                                    <a onmouseover="addClassFuncaoJunto($(this), 'tabelaBotao');" onmouseout="removeClassFuncaoJunto($(this), 'tabelaBotao');"  class="tabelaBotao">
+                                        <img src="images/arrow.png">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                    </div>                
-                    <div class="col-md-menu tudoZero">
-                        <div class="col-xs-10 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
-                                <li>
-                                    <a href="">ASSINE</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-2 tudoZero">
-                            <ul class="nav navbar-nav arturlilink ">
-                                <li>
-                                    <a href=""><img src="images/arrow.png"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
-                <div class="visible-md visible-sm visible-lg tudoZero">
+                <div class="visible-md visible-lg tudoZero">
                     <ul class="nav navbar-nav arturlilink ">
                         <li>                        
-                            <a href="#carrosPos" onclick="toggle_visibility('carrosMenu');">
+                            <a class="itemMenuPrincipal" id="carros" href="#carrosPos" onclick="toggle_visibility('carrosMenu');addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     CARROS
                                 </span>
@@ -212,7 +189,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="#testesPos" onclick="toggle_visibility('testesMenu');">
+                            <a class="itemMenuPrincipal" id="testesBotao" href="#testesPos" onclick="toggle_visibility('testesMenu');addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     TESTES
                                 </span>
@@ -222,7 +199,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="">
+                            <a class="itemMenuPrincipal" id="noticias" href="#embaixo" onclick="addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     NOTÍCIAS
                                 </span>
@@ -232,7 +209,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="">
+                            <a class="itemMenuPrincipal" id="autoservico" href="#embaixo" onclick="addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     AUTO-SERVIÇO
                                 </span>
@@ -242,7 +219,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="">
+                            <a class="itemMenuPrincipal" id="guiadecompras" href="#embaixo" onclick="addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     GUIA DE COMPRAS
                                 </span>
@@ -252,7 +229,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="">
+                            <a class="itemMenuPrincipal" style="text-align: center;" id="tabelafipe" href="#embaixo" onclick="addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     TABELA FIPE
                                 </span>
@@ -262,7 +239,7 @@
                             </a>
                         </li>
                         <li>                        
-                            <a href="">
+                            <a class="itemMenuPrincipal" id="assine" href="#embaixo" onclick="addClassFuncao($(this));">
                                 <span style="vertical-align: middle; display: table-cell;">
                                     ASSINE
                                 </span>
@@ -272,12 +249,12 @@
                 </div>
             </div>
 
-            <div class="col-md-2 col-xs-12" >
+            <div class="col-lg-2 col-xs-12 col-sm-12" >
                 <form class="navbar-form" role="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        <input type="text" class="form-control" placeholder="Procurar" name="srch-term" id="srch-term">
+                        <div class="input-group-btn" style="">
+                            <button class="btn btn-default" type="submit"><i style="height: 20px;" class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </div>
                 </form>
@@ -353,7 +330,7 @@
                 </div>
 
                 <div class="col-md-12 col-xs-12 visible-xs  visible-sm" style="color: white; text-align: center;">
-                    <ul class="navMenu arturlilink arturlilinkticker arturimghidden tudoZero" style="margin-top: 15px; margin-bottom: 15px; ">
+                    <ul class="navMenu arturlilink arturlilinkticker arturimghidden tudoZero" style="margin-top: 15px; margin-bottom: 15px; list-style: none;">
                         <li>
                             <a href="#topo" onclick="toggle_visibility('carrosMenu');">Fechar menu</a>
                         </li>
@@ -419,7 +396,7 @@
 
 
                 <div class="col-md-12 col-xs-12 visible-xs  visible-sm" style="color: white; text-align: center;">
-                	<ul class="navMenu arturlilink arturlilinkticker arturimghidde tudoZero" n" style="margin-top: 15px; margin-bottom: 15px; padding-top: 0px; ">
+                	<ul class="navMenu arturlilink arturlilinkticker arturimghidde tudoZero" n" style="margin-top: 15px; margin-bottom: 15px; padding-top: 0px; list-style: none;">
                 	<li>
                 		<a href="#topo" onclick="toggle_visibility('testesMenu');">Fechar menu</a></li>
                 	</ul>
@@ -429,7 +406,7 @@
             </div>
     </div>
 
- 
+    <a name="embaixo"></a>
     <div class="navbar-fixed-top navbar-red col-md-12 col-xs-12 tudoZero" style="display: inline-block;position: relative; background-color: #242424;text-align: center; z-index: 2;"> 
         <div class="col-md-12 col-xs-12 visible-xs visible-sm tudoZero">
         <div class="pull-left tudoZero">
