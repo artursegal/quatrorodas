@@ -97,6 +97,10 @@ ul.arturlinkgray li > a:hover {
   background: red;
 }
 
+a.botaoSelecionado { 
+  background: #242424;
+}
+
 div.arturlinkgrayhover ul li > a:hover { 
   background: #474747;
 }
@@ -215,9 +219,10 @@ img {
 
 @media (min-width: 992px) {
   .col-md-menu {
-    float: left;
+    /*float: left;*/
   }
     .col-md-menu {
-    width: 14%;
+    /*width: 14%;*/
   }
 }
+
