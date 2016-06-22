@@ -1,6 +1,6 @@
 # quatrorodas
 
-Site desenvolvido como teste para Editora Abril como teste para Desenvolvedor Web.
+Site desenvolvido como teste para Editora Abril para Desenvolvedor Web.
 
 Autor: Artur Segal Kaim
 
